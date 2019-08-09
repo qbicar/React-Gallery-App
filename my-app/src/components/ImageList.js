@@ -8,7 +8,7 @@ const ImageList = props => {
     // if (NoResults.length > 0){
     //     images = results.map(photos =><Image url={photos.photo.url_o} key={photos.photo.id}/>)  
     // } else{
-    //     images = <NoResults />
+    //     images =<NoResults />
     // }
     
     // let photos =

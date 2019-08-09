@@ -1,21 +1,17 @@
 import React from 'react'
 
-const Header = () => (
 
+const Header = () => (
     <header className="App-header">
-        <div>
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Edit <code>src/App.js</code> and save to reload.
-         </p>
-            <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer">
-                Learn React
-        </a>
-        </div>
+        <h1>React Gallery App</h1>
+        <span className="main-nav ul"></span>
+        <ul className="main-nav li">
+            <button className="wed-button" onClick >Wedding</button>
+            <button className="wed-button">Lions</button>
+            <button className="wed-button">Waterfalls</button>
+            {/* <li><NavLink exact to="">Waterfalls</NavLink></li>
+            <li><NavLink exact to="">Rainbows</NavLink></li> */}
+        </ul>
     </header>
 
 )

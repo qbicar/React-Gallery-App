@@ -3,8 +3,11 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #3f4850;
 }
-
+h1{
+  color:#6d034d;
+}
 h2 {
+  color:purple;
   font-size: 2em;
   margin: 52px 0 40px;
   text-transform: capitalize;
@@ -18,9 +21,6 @@ ul {
 a {
   text-decoration: none;
 }
-.material-icon{
-  font-size: 48px;
-}
 
 .search-form {
   max-width: 460px;
@@ -30,7 +30,7 @@ a {
 
 .search-form button {
   outline: none;
-  background-color: #a00404;
+  background-color: #6d034d;
   border: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
@@ -48,6 +48,18 @@ input {
   outline: none;
 }
 
+.wed-button{
+  display: inline-block;
+  background: #f11796;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+  margin: 10px;
+}
+.wed-button a:hover{
+  color: aqua;
+}
+
 .main-nav li {
   width: 100%;
   margin-bottom: 1em;
@@ -62,9 +74,9 @@ input {
 }
 
 .main-nav .active,
-.main-nav a:hover,
+.wed-button a:hover,
 .search-form button:hover {
-  background-color: #275270;
+  background-color: #f108a3;
 }
 
 .photo-container ul {
