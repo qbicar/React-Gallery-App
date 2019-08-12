@@ -1,13 +1,6 @@
 import React, {Component} from 'react'
 
 export default class Search extends Component{
-    state ={
-        searchText: ''
-    }
-
-    onSearchChange = e =>{
-        this.setState({ searchText: e.target.value})
-    }
     handleSubmit = e =>{
         e.preventDefault()
         this.props.onSearch(this.query.value)
@@ -27,3 +20,5 @@ export default class Search extends Component{
         )
     }
 }
+//TODO : fix search icon
+//TODO: route nav links

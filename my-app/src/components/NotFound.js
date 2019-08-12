@@ -4,6 +4,6 @@ const NoResults = props => (
     <div>
         <h2>Results Not Found</h2>
         {/* <img src={require('../searchIcon/nofind.png')} /> */}
-   </div>
+    </div>
 )
 export default NoResults

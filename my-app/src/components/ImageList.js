@@ -2,22 +2,23 @@ import React from 'react'
 import Image from './Images'
 import NoResults from './NotFound'
 
-const ImageList = props => {
-    // const results = props.data
-    // let images
-    // if (NoResults.length > 0){
-    //     images = results.map(photos =><Image url={photos.photo.url_o} key={photos.photo.id}/>)  
-    // } else{
-    //     images =<NoResults />
-    // }
-    
-    // let photos =
-    //     
-    //     )
+
+const ImageList = (props) => {
+    const results = props.data
+    let photos
+    if (results.length > 0) {
+        photos = results.map(photo => <Image url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+            key={photo.id} />)
+    } else {
+        photos = <NoResults />
+    }
+
     return (
-        <ul className="image-list">
-            <Image />
+        <div className="photo-container">
+        <ul>
+            {photos}
         </ul>
+        </div>
     )
 }
 export default ImageList
