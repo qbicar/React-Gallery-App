@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+
 
 export default class Search extends Component{
     handleSubmit = e =>{
@@ -8,7 +9,7 @@ export default class Search extends Component{
     }
     render(){
         return (
-            <form className="search-form" onSubmit={this.handleSubmit}>
+            <form className="search-form button" onSubmit={this.handleSubmit}>
                 <label className="is-hidden" htmlFor="search"></label>
                 <input type="search"
                 onChange ={this.onSearchChange}
