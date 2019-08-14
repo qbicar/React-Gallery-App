@@ -7,7 +7,9 @@ const ImageList = (props) => {
     const results = props.data
     let photos
     if (results.length > 0) {
-        photos = results.map(photo => <Image url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+        photos = results.map(photo => <Image 
+            url={`https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`}
+            alt={photo.title}
             key={photo.id} />)
     } else {
         photos = <NoResults />

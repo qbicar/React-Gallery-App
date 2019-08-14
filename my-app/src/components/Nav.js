@@ -10,18 +10,9 @@ const Navi = (props) => {
             <ul className="main-nav li">
                 <nav>
                     <ul>
-                        <li><NavLink to="/wedding"
-                            onClick={(event) =>{ 
-                                props.onSearch("wedding")
-                               }}>Wedding</NavLink></li>
-                        <li><NavLink to="/lions" 
-                            onClick={(event) => {
-                                props.onSearch("lions")
-                        }}>Lions</NavLink></li>
-                        <li><NavLink exact to="/flowers" 
-                            onClick={(event) => {
-                                props.onSearch("flowers") 
-                        }}>Flowers</NavLink></li>
+                        <li><NavLink to="/wedding">Wedding</NavLink></li>
+                        <li><NavLink to="/lions" >Lions</NavLink></li>
+                        <li><NavLink to= "/flowers">Flowers</NavLink></li>
                     </ul>
                 </nav>
             </ul>

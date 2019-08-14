@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = (props) => {
+const Home = (props) => {
     
     return (
         <header>
